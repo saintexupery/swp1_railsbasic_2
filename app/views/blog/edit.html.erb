@@ -1,0 +1,9 @@
+<h1>EDIT</h1>
+<p>edit post : <%=@post.id%></p>
+
+<form action="/blog/update">
+    <input type="hidden" name="id" value="<%=@post.id%>">
+    <input type="text" name="irum" value="<%=@post.writer%>"><br>
+    <textarea name="naeyong"><%=@post.content%></textarea> <br>
+    <input type="submit">
+</form>
